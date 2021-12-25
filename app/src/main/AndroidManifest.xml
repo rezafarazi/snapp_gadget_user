@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gagit.snapp.snapp_gagit">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Permissions -->
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_c"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/no_actiob_bar7">
+        <activity
+            android:name=".Logo"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sign_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar3" />
+        <activity
+            android:name=".login_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar3" />
+        <activity
+            android:name=".no_internet_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar2" />
+        <activity
+            android:name=".Sms_Panle_sign"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar2" />
+        <activity
+            android:name=".Sms2_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar4" />
+        <activity
+            android:name=".m_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar6"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".factors_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar6" />
+        <activity
+            android:name=".Share_Factor_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar6" />
+        <activity
+            android:name=".Visit_List_Item_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar8" />
+        <activity
+            android:name=".themes_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar7" />
+        <activity
+            android:name=".command_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".address_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".clock_price_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar6" />
+        <activity
+            android:name=".map_ac"
+            android:label="@string/title_activity_map_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".report_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".get_all_list_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pay_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pay_web_view_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sub3_and_done_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".question_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar8" />
+        <activity
+            android:name=".type_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar8" />
+        <activity
+            android:name=".check_list_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar8" />
+        <activity
+            android:name=".numbers_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".store_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detailes_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".price_done_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loading_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/no_actiob_bar6" />
+        <activity
+            android:name=".chat_list_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat_ac"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name=".Access_is_false_ac"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

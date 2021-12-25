@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".command_ac"
+    android:background="@color/colorPrimary">
+
+
+
+
+    <include
+        layout="@layout/header_m_ac"/>
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/send_command"
+        android:textColor="@color/colorAccent" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layoutDirection="rtl">
+
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            app:fabSize="normal"
+            android:src="@drawable/send_icon"
+            android:onClick="onclick_btn_send_commadn_command_ac"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_border"
+            android:backgroundTint="#FFF"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_5"
+            android:paddingRight="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_15"
+            android:maxLength="200"
+            android:singleLine="true"
+            android:elevation="20dp"
+            android:id="@+id/command_edit_text_command_ac"
+            android:textSize="@dimen/edit_text_text_size12"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my_list_flag"
+    android:background="#FFF">
+
+
+
+
+
+
+
+
+
+
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        layout="@layout/header_m_ac"
+        android:id="@+id/header_my_list_frag_frag"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_my_list_user"
+        android:layout_below="@+id/header_my_list_frag_frag">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/my_list_user"
+            android:backgroundTintMode="add"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+
+    <!--Is Empty Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/is_empty_my_list_flag"
+        android:visibility="gone"
+        android:layout_below="@+id/header_my_list_frag_frag">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/empty_icon1"
+                android:id="@+id/image_view_my_list_flag"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/image_view_my_list_flag"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"
+                android:text="@string/this_item_is_null"
+                android:layout_marginTop="@dimen/margin_5"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <!--Is Empty End-->
+
+
+
+
+
+
+
+</RelativeLayout>

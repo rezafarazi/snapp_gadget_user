@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/factor_icon"-->
+            <!--android:layout_margin="12dp"/>-->
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/help_icon"-->
+            <!--android:layout_margin="12dp"/>-->
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="12dp"
+            android:drawableLeft="@drawable/help_icon"
+            android:text="@string/Help"
+            android:textColor="@color/colorAccent"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/none_border"
+            android:id="@+id/help_buttn"
+            android:onClick="onclick_help_button_n_price_header"
+            android:textSize="@dimen/button_text_text_size12"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="12dp"
+            android:drawableLeft="@drawable/factor_icon"
+            android:text="@string/Factor"
+            android:textColor="@color/colorAccent"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/none_border"
+            android:onClick="onclick_factors_btn"
+            android:id="@+id/factor_button_n_price_m_ac"
+            android:textSize="@dimen/button_text_text_size12"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

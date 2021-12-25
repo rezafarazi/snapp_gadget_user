@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".n_price_frag"
+    android:id="@+id/n_price_farg_lay">
+
+
+
+
+
+
+
+
+
+
+
+    <include
+        layout="@layout/header_m_ac2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/header_n_price_frag"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/header_profile_background"
+        android:id="@+id/search_bar_top_n_price_frag"
+        android:layout_below="@+id/header_n_price_frag">
+
+        <include
+            layout="@layout/serach_header_n_price_frag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/new_price_refresher_swipe"
+        android:layout_below="@id/search_bar_top_n_price_frag"
+        android:background="@color/colorAccent">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:id="@+id/new_price_frag_grid_view"
+            android:backgroundTintMode="add"
+            android:background="@color/colorAccent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Search Result Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar_top_n_price_frag"
+        android:visibility="gone"
+        android:id="@+id/search_result_frag_ly">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.snapp_gagit.search_result_frag"
+            android:id="@+id/search_result_frag"/>
+
+
+    </RelativeLayout>
+    <!--Search Result End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/frag_2_select_cat">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.snapp_gagit.selected_cat_flag"
+            android:id="@+id/selected_cat_flag" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat_list_ac">
+
+
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_m_ac"
+        android:id="@+id/header_chat_list_ac"/>
+
+
+
+
+
+
+
+
+    <!--null ly  Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_chat_list_ac"
+        android:id="@+id/not_avable_ly_chat_list_ac"
+        android:visibility="gone">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/Image_404_view_chat_list_ac"
+                android:src="@drawable/empty_icon1"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Image_404_view_chat_list_ac"
+                android:text="@string/this_item_is_null"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <!--null ly  End-->
+
+
+
+
+
+
+
+
+
+    <!--Context Start-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_chat_list_ac"
+        android:id="@+id/refresh_ly_chat_list_ac">
+
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/grid_view_chat_list_ac"/>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--Context End-->
+
+
+
+
+
+
+
+</RelativeLayout>

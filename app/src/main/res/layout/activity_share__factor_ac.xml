@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Share_Factor_ac">
+
+
+
+
+
+    <include
+        layout="@layout/header_m_ac"
+        android:layout_height="?actionBarSize"
+        android:layout_width="match_parent"/>
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:id="@+id/image_view_factor_dialog"
+        android:layout_margin="15dp"
+        android:layout_marginTop="?actionBarSize"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Share"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/share_icon"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="@color/colorAccent"
+            android:onClick="on_click_share_factor"
+            android:textSize="@dimen/button_text_text_size12"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

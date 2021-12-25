@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Logo"
+    android:id="@+id/relative_logo_ac">
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/top_logo_panle_logo_ac">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/witt2"
+            android:id="@+id/logo_in_log_ac"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slider_in_logo_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"
+            android:visibility="gone">
+
+        </android.support.v4.view.ViewPager>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_logo_panle_logo_ac"
+        android:layout_centerInParent="true"
+        android:id="@+id/procc_load_start"
+        android:visibility="gone"/>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_logo_panle_logo_ac"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/sing_and_log">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="#FFF"
+            android:background="@drawable/login_btn_background"
+            android:textSize="@dimen/button_text_text_size10"
+            android:onClick="onclick_log_in_btn_in_log_ac"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/login_btn_background"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/button_text_text_size10"
+            android:onClick="onclick_sign_in_btn_in_log_ac"
+            android:id="@+id/create_a_account_logo_ac"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_background"
+                android:layout_margin="15dp"
+                android:text="@string/en"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/button_text_text_size10"
+                android:onClick="changelang_to_en"
+                android:id="@+id/change_to_en"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_background"
+                android:layout_margin="15dp"
+                android:text="@string/fa"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/button_text_text_size10"
+                android:onClick="changelang_to_fa"
+                android:id="@+id/change_to_fa"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="@dimen/text_view_text_size14"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

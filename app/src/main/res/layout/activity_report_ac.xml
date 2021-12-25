@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".report_ac">
+
+
+
+
+
+
+
+    <include
+        layout="@layout/header_m_ac"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/header_report_ac"/>
+
+
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_report_ac"
+        android:layout_marginBottom="?actionBarSize">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/margin_50">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/margin_5">
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/image_view_report_ac"
+                    android:layout_marginTop="?actionBarSize"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="?actionBarSize">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat"
+                        android:textAlignment="center"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat"
+                        android:textAlignment="center"
+                        android:id="@+id/xadmat_textview_report_ac"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat_type"
+                        android:textAlignment="center"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat"
+                        android:textAlignment="center"
+                        android:id="@+id/xadmat_type_textview_report_ac"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat_type_sub"
+                        android:textAlignment="center"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat"
+                        android:textAlignment="center"
+                        android:id="@+id/xadmat_type_sub_textview_report_ac"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat_Day"
+                        android:textAlignment="center"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat"
+                        android:textAlignment="center"
+                        android:id="@+id/xadmat_day_textview_report_ac"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat_time"
+                        android:textAlignment="center"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat"
+                        android:textAlignment="center"
+                        android:id="@+id/xadmat_time_textview_report_ac"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/det"
+                        android:textAlignment="center"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/xadamat"
+                        android:textAlignment="center"
+                        android:id="@+id/ditales_textview_report_ac"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/text_view_text_size12"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:text="@string/done"
+        android:textColor="@color/colorAccent"
+        android:onClick="onclick_done_btn_report_ac"
+        android:textSize="@dimen/button_text_text_size12"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/button_border_pay_color"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

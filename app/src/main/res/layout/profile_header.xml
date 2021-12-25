@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_profile_background">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:foreground="@drawable/oval_image_foreground"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:src="@drawable/profile_image_top_resolution_icon"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/profile_image_view_profile_header"
+            android:layout_margin="15dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Enter_Your_Phone_Number_Hint"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:textDirection="ltr"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/bk"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_view_text_size10"
+                android:id="@+id/money_text_view_profile_header_frag"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Save_Money"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/bk"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_view_text_size10"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Enter_Your_Phone_Number_Hint"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:textDirection="ltr"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/bk"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_view_text_size10"
+                android:id="@+id/phone_number_text_view_profile_header_frag"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Phone_Number"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/bk"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_view_text_size10"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_ac"
+    android:background="#FFF">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/log2"
+                android:layout_margin="25dp"
+                android:id="@+id/sign_in_ac_top_image"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/sign_in_top_buttons"
+                android:layout_below="@id/sign_in_ac_top_image"
+                android:layout_margin="25dp">
+
+
+
+                <!--<com.google.android.gms.common.SignInButton-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:id="@+id/google_sign_in_sign_ac" />-->
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/sign_in_top_buttons"
+                android:orientation="horizontal"
+                android:id="@+id/sign_in_ac_or_line">
+
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#CCC"
+                    android:layout_below="@id/Log_in_top_buttons"
+                    android:layout_weight="2"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/or"
+                    android:textColor="@color/textcolor1"
+                    android:textSize="@dimen/text_view_text_size10"/>
+
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#CCC"
+                    android:layout_below="@id/Log_in_top_buttons"
+                    android:layout_weight="2"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--Panle For Fildes -->
+
+
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_below="@id/log_in_ac_or_line"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:id="@+id/frist_input_layout_log_in_ac"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingRight="15dp">-->
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/name"
+                android:background="@drawable/edit_text_lay1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:drawableRight="@drawable/accunt_jmage"
+                android:layout_below="@id/sign_in_ac_or_line"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/frist_name_sign_ac"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="@dimen/edit_text_text_size12"/>
+
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/family"
+                android:background="@drawable/edit_text_lay1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:drawableRight="@drawable/family_icon"
+                android:layout_below="@id/frist_name_sign_ac"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/last_name_sign_ac"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textSize="@dimen/edit_text_text_size12"/>
+
+
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/city"
+                android:background="@drawable/edit_text_lay1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:drawableRight="@drawable/city_icon"
+                android:layout_below="@id/last_name_sign_ac"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/city_name_sign_ac"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="@dimen/edit_text_text_size12"/>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--Panle For Fildes -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_below="@id/city_name_sign_ac"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+                android:id="@+id/bottom_buttons_log_in_ac">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/full_white_button"
+                    android:textSize="@dimen/button_text_text_size10"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:onClick="onclick_log_btn_sign_ac"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/done"
+                    android:textColor="#FFF"
+                    android:background="@drawable/full_color_button"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/button_text_text_size10"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:onClick="onclick_sign_btn_sign_ac"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        layout="@layout/header_m_ac"
+        android:id="@+id/header_sign_ac"/>
+
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_sign_ac"
+        android:id="@+id/webview_sign_ac"/>
+
+
+
+
+
+
+
+</RelativeLayout>

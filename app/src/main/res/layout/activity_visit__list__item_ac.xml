@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Visit_List_Item_ac"
+    android:background="@color/colorAccent">
+
+
+
+
+
+
+    <!--Header Start-->
+    <include
+        layout="@layout/header_m_ac"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/header_vitsit_list_item_ac"/>
+    <!--Header End-->
+
+
+
+
+
+
+
+
+
+    <!--404 Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_vitsit_list_item_ac"
+        android:id="@+id/not_avable_ly_visit_item_ac"
+        android:visibility="gone">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/Image_404_view_visit_list_item_ac"
+                android:src="@drawable/not_avable_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Image_404_view_visit_list_item_ac"
+                android:text="@string/is_item_not_avable"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <!--404 End-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--Context Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_vitsit_list_item_ac"
+        android:id="@+id/main_context_visit_list_item_ac"
+        android:visibility="gone">
+
+
+
+
+
+
+        <!--Top-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/prop_border"
+            android:orientation="horizontal"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:id="@+id/top_panel_visit_ac">
+
+
+
+            <!--Right-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_weight="0.8">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_ditales"
+                    android:fontFamily="@font/is"
+                    android:textSize="10dp"
+                    android:textColor="#666666"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/title_visit_list_ac"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_ditales"
+                    android:fontFamily="@font/is"
+                    android:textSize="10dp"
+                    android:textColor="#999"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/time_visit_list_ac"/>
+
+
+            </LinearLayout>
+            <!--Right-->
+
+
+
+
+            <!--Left-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:layout_margin="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_ditales"
+                    android:fontFamily="@font/is"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryLeght"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+            <!--Left-->
+
+
+        </LinearLayout>
+        <!--Top-->
+
+
+
+
+
+
+
+
+        <!--Center-->
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?actionBarSize"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/top_panel_visit_ac"
+            android:id="@+id/context_grid_view_visit_ac"/>
+        <!--Center-->
+
+
+
+
+
+
+
+
+        <!--Bottom Menu Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/cancel_stop"
+                android:onClick="onclick_cancel_button_Visit_list_item_ac"
+                android:textSize="@dimen/button_text_text_size14"
+                android:paddingRight="@dimen/margin_15"
+                android:paddingLeft="@dimen/margin_15"
+                android:elevation="@dimen/margin_15"
+                android:id="@+id/cancel_btn_visit_ac"/>
+
+
+
+
+        </LinearLayout>
+        <!--Bottom Menu End-->
+
+
+
+
+
+
+    </RelativeLayout>
+    <!--Context End-->
+
+
+
+
+
+
+
+
+
+
+    <!--Proccess Layout Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_vitsit_list_item_ac"
+        android:id="@+id/plase_wite_for_fill_fieldes_visit_list_item_ac">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true">
+
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/process_bar_visit_list_item_ac"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wite"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"
+                android:layout_below="@+id/process_bar_visit_list_item_ac"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <!--Proccess Layout End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

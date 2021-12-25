@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sub3_and_done_ac">
+
+
+    <include
+        layout="@layout/header_m_ac"
+        android:layout_height="?actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/header_sub3_ac"/>
+
+
+
+
+
+    <com.devsmart.android.ui.HorizontalListView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/top_switch_view_sub3_ac"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/header_sub3_ac"/>
+
+
+
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_sub3_ac"
+        android:layout_below="@id/top_switch_view_sub3_ac">
+
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/grid_view_sub3_ac"
+            android:background="@drawable/grid_dialog_background" />
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+</RelativeLayout>

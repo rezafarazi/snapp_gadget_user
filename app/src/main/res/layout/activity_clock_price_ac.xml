@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clock_price_ac"
+    android:background="@color/colorAccent">
+
+
+
+
+
+
+
+
+        <include
+            layout="@layout/header_m_ac"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/header_click_price_ac"/>
+
+
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.gagit.snapp.snapp_gagit.date_frag"
+            android:id="@+id/date_frag"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_click_price_ac"
+            android:textAlignment="center"
+            android:text="@string/Yout_TIme"
+            android:textColor="@color/textcolor1"
+            android:layout_margin="@dimen/margin_15"
+            android:textSize="@dimen/text_view_text_size14"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numbersSelectorColor="@color/colorPrimaryDark"
+            android:id="@+id/time_clock_price_ac"
+            android:timePickerMode="spinner"
+            android:layout_centerInParent="true"/>
+
+
+
+
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="?actionBarSize"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:text="@string/date"
+                android:layoutDirection="rtl"
+                android:onClick="onclick_get_clender"
+                android:textSize="@dimen/button_text_text_size10"
+                android:id="@+id/date_btn_clock_ac"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/button_border_pay_color"/>
+
+
+
+
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="@color/textcolor1"-->
+                <!--android:text="@string/To_Next_Day"-->
+                <!--android:layoutDirection="rtl"-->
+                <!--android:onClick="radio_btn_clock_price_ac"-->
+                <!--android:id="@+id/radio1_day_clock_price_ac"-->
+                <!--android:textSize="@dimen/text_view_text_size12"-->
+                <!--android:background="@color/colorAccent"/>-->
+
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:text="@string/to_day"-->
+                <!--android:layoutDirection="rtl"-->
+                <!--android:onClick="radio_btn_clock_price_ac"-->
+                <!--android:checked="true"-->
+                <!--android:id="@+id/radio2_day_clock_price_ac"-->
+                <!--android:textSize="@dimen/text_view_text_size12"-->
+                <!--android:background="@color/colorPrimary"/>-->
+
+
+            </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/next_page"
+            android:textColor="@color/colorAccent"
+            android:onClick="onclick_done_clock_price_ac"
+            android:textSize="@dimen/button_text_text_size12"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/button_border_pay_color"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

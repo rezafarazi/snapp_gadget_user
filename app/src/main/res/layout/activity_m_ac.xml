@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".m_ac">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--m_ac Context Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:id="@+id/frag_1_new_price_m_ac">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.snapp_gagit.n_price_frag"
+            android:id="@+id/new_price_frag_main_ac" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:visibility="gone"
+        android:id="@+id/panle_my_list_user">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.snapp_gagit.my_list_flag"
+            android:id="@+id/my_list_fragment" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:visibility="gone"
+        android:id="@+id/panle_prifile_user">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.snapp_gagit.profile_frag"
+            android:id="@+id/profile_fragment" />
+
+    </RelativeLayout>
+
+
+
+    <!--m_ac Context End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Bottom Menu Start-->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_menu_m_ac"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_header"
+        app:menu="@menu/bottom_menu_m_ac"
+        android:forceHasOverlappingRendering="true"/>
+    <!--Bottom Menu End-->
+
+
+
+
+
+
+
+
+</RelativeLayout>

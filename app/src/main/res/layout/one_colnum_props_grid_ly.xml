@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/prop_border"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+            <!--TOP-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textDirection="rtl"
+                android:layoutDirection="rtl">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile_icon"
+                    android:foreground="@drawable/oval_image_border"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/image_view_prop_grid_ly"/>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="صمد صمدی"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/is"
+                        android:textSize="12dp"
+                        android:textColor="@color/textcolor1"
+                        android:id="@+id/title_view_prop_grid_ly"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="صمد صمدی"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/is"
+                        android:textSize="10dp"
+                        android:textColor="#999"
+                        android:id="@+id/time_view_prop_grid_ly"/>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:textDirection="rtl"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/coin"
+                            android:layout_margin="5dp"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10000 تومان"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/is"
+                            android:textSize="10dp"
+                            android:textColor="#daaa17"
+                            android:id="@+id/money_view_prop_grid_ly"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+            <!--TOP-->
+
+
+
+
+
+
+
+
+
+
+
+            <!--Center-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:textDirection="rtl"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="-10dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="صمد صمدی"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/is"
+                    android:textSize="12dp"
+                    android:textColor="#666666"
+                    android:id="@+id/point_view_prop_grid_ly"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:fontFamily="@font/is"
+                            android:textSize="9dp"
+                            android:textColor="#AAA"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentRight="true" />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/process_view_prop_grid_ly"
+                        android:layoutDirection="rtl"
+                        android:textDirection="rtl"/>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="صمد صمدی"
+                            android:fontFamily="@font/is"
+                            android:textSize="9dp"
+                            android:textColor="#999"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/command_counter_view_prop_grid_ly"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/see_comment"
+                            android:fontFamily="@font/is"
+                            android:textSize="9dp"
+                            android:textColor="#666666"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentLeft="true" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <!--Center-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!--Botttom-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="-25dp"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/green_border_null_center"
+                android:text="@string/select_prop"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"
+                android:textColor="#68C800"
+                android:id="@+id/select_btn_view_prop_grid_ly"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/red_border_null_center"
+                android:text="@string/cell_by_prop"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"
+                android:textColor="#E10050"
+                android:id="@+id/cell_btn_view_prop_grid_ly"/>
+
+        </LinearLayout>
+        <!--Botttom-->
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

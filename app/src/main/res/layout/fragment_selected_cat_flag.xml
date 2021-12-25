@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selected_cat_flag">
+
+
+
+
+
+
+
+
+    <com.devsmart.android.ui.HorizontalListView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/top_switch_view_select_frag_m_ac"
+        android:elevation="20dp"
+        android:background="@color/colorPrimaryDark"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_switch_view_select_frag_m_ac"
+        android:id="@+id/select_cat_swiper"
+        android:background="@color/colorAccent">
+
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/selected_cat_grid_view"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"/>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

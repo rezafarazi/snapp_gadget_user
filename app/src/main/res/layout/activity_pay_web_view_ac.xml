@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pay_web_view_ac"
+    android:background="@color/colorPrimary">
+
+
+
+
+    <include
+        layout="@layout/header_m_ac"/>
+
+
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pay_web_view_ac"
+        android:layout_marginTop="?actionBarSize" />
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/end_event"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/full_color_button"
+        android:textColor="@color/colorAccent"
+        android:onClick="onclick_end_event_webview_ac"
+        android:layout_margin="5dp"/>
+
+
+
+
+
+
+</RelativeLayout>
